@@ -1,0 +1,25 @@
+{
+  "name": "@all/utils-build",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "huangzx <670626741@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/build.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npm.taobao.org/"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\""
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
