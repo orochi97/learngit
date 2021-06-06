@@ -6,7 +6,8 @@
   "command": {
     "publish": {
       "ignoreChanges": ["ignored-file", "*.md"],
-      "message": "chore(release): publish"
+      "message": "chore(release): publish",
+      "registry": "http://localhost:4873"
     }
   },
   "npmClient": "npm"
