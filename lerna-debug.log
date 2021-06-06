@@ -1,51 +1,72 @@
 0 silly argv {
-0 silly argv   _: [ 'version' ],
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
 0 silly argv   lernaVersion: '4.0.0',
-0 silly argv   '$0': 'C:\\Users\\Lenovo\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
+0 silly argv   '$0': 'C:\\Users\\Lenovo\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js',
+0 silly argv   bump: 'from-git'
 0 silly argv }
 1 notice cli v4.0.0
 2 verbose rootPath D:\HZX_PROJECT\lerna
-3 info current version 0.0.1
-4 silly isAnythingCommitted
-5 verbose isAnythingCommitted 1
-6 silly getCurrentBranch
-7 verbose currentBranch release
-8 silly remoteBranchExists
-9 silly isBehindUpstream
-10 silly isBehindUpstream release is behind origin/release by 0 commit(s) and ahead by 1
-11 silly hasTags
-12 verbose hasTags true
-13 silly git-describe.sync "v0.0.2-1-gd513f15" => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"1","sha":"d513f15","isDirty":false}
-14 info Looking for changed packages since v0.0.2
-15 silly checking diff packages/build
-16 silly found diff in packages/build/package.json
-17 verbose filtered diff [ 'packages/build/package.json' ]
-18 silly checking diff packages/release
-19 silly no diff found in @all/utils-release
-20 verbose updated @all/utils-build
-21 verbose git-describe undefined => "v0.0.2-1-gd513f15"
-22 silly git-describe parsed => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"1","sha":"d513f15","isDirty":false}
-23 info execute Skipping releases
-24 silly lifecycle No script for "preversion" in "@all/utils", continuing
-25 silly lifecycle No script for "preversion" in "@all/utils-build", continuing
-26 silly lifecycle No script for "preversion" in "@all/utils-release", continuing
-27 silly lifecycle No script for "version" in "@all/utils-build", continuing
-28 silly lifecycle No script for "version" in "@all/utils-release", continuing
-29 silly lifecycle No script for "version" in "@all/utils", continuing
-30 silly gitAdd [
-30 silly gitAdd   'packages/build/package.json',
-30 silly gitAdd   'packages/build/package-lock.json',
-30 silly gitAdd   'packages/release/package.json',
-30 silly gitAdd   'packages/release/package-lock.json',
-30 silly gitAdd   'lerna.json'
-30 silly gitAdd ]
-31 silly gitCommit v0.0.2
-32 verbose git [ 'commit', '-m', 'v0.0.2' ]
-33 silly gitTag v0.0.2
-34 verbose git [ 'tag', 'v0.0.2', '-m', 'v0.0.2' ]
-35 error Error: Command failed with exit code 128: git tag v0.0.2 -m v0.0.2
-35 error fatal: tag 'v0.0.2' already exists
-35 error     at makeError (D:\HZX_PROJECT\lerna\node_modules\execa\lib\error.js:60:11)
-35 error     at handlePromise (D:\HZX_PROJECT\lerna\node_modules\execa\index.js:118:26)
-35 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
-35 error     at async Promise.all (index 0)
+3 info versioning independent
+4 verbose session d2ceb3417340e438
+5 verbose user-agent lerna/4.0.0/node@v12.16.0+x64 (win32)
+6 verbose git-describe undefined => "@all/utils-release@0.1.6-0-g2587251"
+7 silly git-describe parsed => {"lastTagName":"@all/utils-release@0.1.6","lastVersion":"0.1.6","refCount":"0","sha":"2587251","isDirty":false}
+8 silly getCurrentTags matching "*@*"
+9 info publish Publishing packages to npm...
+10 notice Skipping all user and access validation due to third-party registry
+11 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+12 silly getCurrentSHA
+13 verbose getCurrentSHA 2587251539e432c4d2c331756839ec8a1a30e006
+14 silly lifecycle No script for "prepublish" in "@all/utils", continuing
+15 silly lifecycle No script for "prepare" in "@all/utils", continuing
+16 silly lifecycle No script for "prepublishOnly" in "@all/utils", continuing
+17 silly lifecycle No script for "prepack" in "@all/utils", continuing
+18 verbose pack-directory packages\release
+19 silly lifecycle No script for "prepublish" in "@all/utils-release", continuing
+20 silly lifecycle No script for "prepare" in "@all/utils-release", continuing
+21 silly lifecycle No script for "prepublishOnly" in "@all/utils-release", continuing
+22 silly lifecycle No script for "prepack" in "@all/utils-release", continuing
+23 silly lifecycle No script for "postpack" in "@all/utils-release", continuing
+24 verbose packed packages\release
+25 silly lifecycle No script for "postpack" in "@all/utils", continuing
+26 verbose publish @all/utils-release
+27 silly FetchError: request to http://registry.npm.taobao.org/@all%2futils-release failed, reason: connect ETIMEDOUT 183.57.82.162:80
+27 silly     at ClientRequest.<anonymous> (D:\HZX_PROJECT\lerna\node_modules\minipass-fetch\lib\index.js:97:14)
+27 silly     at ClientRequest.emit (events.js:321:20)
+27 silly     at Socket.socketErrorListener (_http_client.js:426:9)
+27 silly     at Socket.emit (events.js:333:22)
+27 silly     at emitErrorNT (internal/streams/destroy.js:92:8)
+27 silly     at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+27 silly     at processTicksAndRejections (internal/process/task_queues.js:84:21)
+27 silly  FetchError: request to http://registry.npm.taobao.org/@all%2futils-release failed, reason: connect ETIMEDOUT 183.57.82.162:80
+27 silly     at ClientRequest.<anonymous> (D:\HZX_PROJECT\lerna\node_modules\minipass-fetch\lib\index.js:97:14)
+27 silly     at ClientRequest.emit (events.js:321:20)
+27 silly     at Socket.socketErrorListener (_http_client.js:426:9)
+27 silly     at Socket.emit (events.js:333:22)
+27 silly     at emitErrorNT (internal/streams/destroy.js:92:8)
+27 silly     at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+27 silly     at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+27 silly   stack: 'FetchError: request to http://registry.npm.taobao.org/@all%2futils-release failed, reason: connect ETIMEDOUT 183.57.82.162:80\n' +
+27 silly     '    at ClientRequest.<anonymous> (D:\\HZX_PROJECT\\lerna\\node_modules\\minipass-fetch\\lib\\index.js:97:14)\n' +
+27 silly     '    at ClientRequest.emit (events.js:321:20)\n' +
+27 silly     '    at Socket.socketErrorListener (_http_client.js:426:9)\n' +
+27 silly     '    at Socket.emit (events.js:333:22)\n' +
+27 silly     '    at emitErrorNT (internal/streams/destroy.js:92:8)\n' +
+27 silly     '    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)\n' +
+27 silly     '    at processTicksAndRejections (internal/process/task_queues.js:84:21)',
+27 silly   code: 'ETIMEDOUT',
+27 silly   errno: 'ETIMEDOUT',
+27 silly   syscall: 'connect',
+27 silly   address: '183.57.82.162',
+27 silly   port: 80,
+27 silly   type: 'system'
+27 silly }
+28 error ETIMEDOUT request to http://registry.npm.taobao.org/@all%2futils-release failed, reason: connect ETIMEDOUT 183.57.82.162:80
+29 error FetchError: request to http://registry.npm.taobao.org/@all%2futils-release failed, reason: connect ETIMEDOUT 183.57.82.162:80
+29 error     at ClientRequest.<anonymous> (D:\HZX_PROJECT\lerna\node_modules\minipass-fetch\lib\index.js:97:14)
+29 error     at ClientRequest.emit (events.js:321:20)
+29 error     at Socket.socketErrorListener (_http_client.js:426:9)
+29 error     at Socket.emit (events.js:333:22)
+29 error     at emitErrorNT (internal/streams/destroy.js:92:8)
+29 error     at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
