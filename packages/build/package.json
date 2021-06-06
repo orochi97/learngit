@@ -1,7 +1,7 @@
 {
   "name": "@all/utils-build",
   "version": "0.1.5",
-  "description": "123",
+  "description": "456",
   "author": "huangzx <670626741@qq.com>",
   "homepage": "",
   "license": "ISC",
@@ -14,7 +14,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\""
+    "test": "echo \"Error: run tests from root build\""
   },
   "dependencies": {
     "axios": "^0.21.1"

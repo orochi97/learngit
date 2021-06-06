@@ -1,7 +1,7 @@
 {
   "name": "@all/utils-release",
   "version": "0.1.11",
-  "description": "this is release tool 456",
+  "description": "this is release tool 777",
   "author": "huangzx <670626741@qq.com>",
   "homepage": "",
   "license": "ISC",
@@ -14,7 +14,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root release\""
   },
   "dependencies": {
     "glob": "^7.1.7"
