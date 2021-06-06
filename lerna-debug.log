@@ -1,0 +1,51 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'C:\\Users\\Lenovo\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath D:\HZX_PROJECT\lerna
+3 info current version 0.0.1
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly getCurrentBranch
+7 verbose currentBranch release
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream release is behind origin/release by 0 commit(s) and ahead by 1
+11 silly hasTags
+12 verbose hasTags true
+13 silly git-describe.sync "v0.0.2-1-gd513f15" => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"1","sha":"d513f15","isDirty":false}
+14 info Looking for changed packages since v0.0.2
+15 silly checking diff packages/build
+16 silly found diff in packages/build/package.json
+17 verbose filtered diff [ 'packages/build/package.json' ]
+18 silly checking diff packages/release
+19 silly no diff found in @all/utils-release
+20 verbose updated @all/utils-build
+21 verbose git-describe undefined => "v0.0.2-1-gd513f15"
+22 silly git-describe parsed => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"1","sha":"d513f15","isDirty":false}
+23 info execute Skipping releases
+24 silly lifecycle No script for "preversion" in "@all/utils", continuing
+25 silly lifecycle No script for "preversion" in "@all/utils-build", continuing
+26 silly lifecycle No script for "preversion" in "@all/utils-release", continuing
+27 silly lifecycle No script for "version" in "@all/utils-build", continuing
+28 silly lifecycle No script for "version" in "@all/utils-release", continuing
+29 silly lifecycle No script for "version" in "@all/utils", continuing
+30 silly gitAdd [
+30 silly gitAdd   'packages/build/package.json',
+30 silly gitAdd   'packages/build/package-lock.json',
+30 silly gitAdd   'packages/release/package.json',
+30 silly gitAdd   'packages/release/package-lock.json',
+30 silly gitAdd   'lerna.json'
+30 silly gitAdd ]
+31 silly gitCommit v0.0.2
+32 verbose git [ 'commit', '-m', 'v0.0.2' ]
+33 silly gitTag v0.0.2
+34 verbose git [ 'tag', 'v0.0.2', '-m', 'v0.0.2' ]
+35 error Error: Command failed with exit code 128: git tag v0.0.2 -m v0.0.2
+35 error fatal: tag 'v0.0.2' already exists
+35 error     at makeError (D:\HZX_PROJECT\lerna\node_modules\execa\lib\error.js:60:11)
+35 error     at handlePromise (D:\HZX_PROJECT\lerna\node_modules\execa\index.js:118:26)
+35 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+35 error     at async Promise.all (index 0)
